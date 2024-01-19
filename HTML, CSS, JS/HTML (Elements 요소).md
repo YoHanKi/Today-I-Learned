@@ -1,4 +1,4 @@
-# HTML 기초 1일차
+# HTML 기초 (Elements 요소)
 > 출처 weniv
 
 ### 프론트앤드란?

@@ -217,7 +217,7 @@ margin: auto 0 auto auto; top, right, bottom, left 순으로 작성.
 
 - margin auto사용 시 여백을 사용하여 정렬하지만, 세로 정렬은 적용할 수 없다.
 
-> 
+> [!Tip]
 > 💡 **마진병합 현상(Margin Collapsing)**
 > 
 > 1. 요소와 요소 사이에 공간이 있을 경우, 더 높은 값의 마진 값만 적용

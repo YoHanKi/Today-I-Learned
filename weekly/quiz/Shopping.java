@@ -3,7 +3,7 @@ package weekly.quiz;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-public class Shoping {
+public class Shopping {
     public static void main(String[] args) {
         Scanner std = new Scanner(System.in);
 

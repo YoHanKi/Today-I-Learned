@@ -1,0 +1,52 @@
+@startuml
+
+class Contact<T> {
+  - name: T
+  - phoneNumber: T
+  + Contact(name: T, phoneNumber: T)
+  + getName(): T
+  + setName(name: T): void
+  + getPhoneNumber(): T
+  + setPhoneNumber(phoneNumber: T): void
+  + toString(): String
+}
+
+class BusinessContact<T> {
+  - company: T
+  + BusinessContact(name: T, phoneNumber: T, company: T)
+  + getCompany(): T
+  + setCompany(company: T): void
+  + toString(): String
+}
+
+class PersonalContact<T> {
+  - relationship: T
+  + PersonalContact(name: T, phoneNumber: T, relationship: T)
+  + getRelationship(): T
+  + setRelationship(relationship: T): void
+  + toString(): String
+}
+
+class AddressBook {
+  - scn: Scanner
+  - list: List<Contact<String>>
+  + mainMenu(): void
+  + addContact(N: int): void
+  + displayContacts(): void
+  + searchContact(): void
+  + markOffList(contact: Contact): void
+}
+
+class ContactManger {
+  + main(args: String[]): void
+}
+
+Contact --|> BusinessContact
+Contact --|> PersonalContact
+BusinessContact --|> Contact
+PersonalContact --|> Contact
+AddressBook --|> Contact
+ContactManger --|> AddressBook
+}
+
+@enduml
